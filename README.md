@@ -1,10 +1,9 @@
-# Developer Notes:
+# Notes:
 
-The original assignment was pretty simple and did not require the usage of many react hooks.
-So, beside the minimal changes required by the assignment, I have also added a few features:
+The original assignment was pretty simple and did not require the usage of many react hooks. So I decided to add some features:
 
 * The App component is fetching the data from a fake backend (FakeBackendService provided)
-* I have added some randomness in the data fetch, the promise sometimes returns an error. I have added a refresh button so that employees can be re-fetched if necessary
+* FakeBackendService will randomly reject the promise to mimic a failed fetch. I have added a refresh button so that the employees list can be re-fetched if necessary
 * Added sorting to the table
 * Added filtering by name to the table
 * Added ability to switch between a light and a dark theme
