@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" time="3.06">
+  <testsuite name="Editable Table Errors" errors="0" failures="0" skipped="0" timestamp="2022-08-11T00:35:04" time="2.151" tests="8">
+    <testcase classname="Editable Table Errors should render an error message if fetch errors" name="Editable Table Errors should render an error message if fetch errors" time="0.049">
+    </testcase>
+    <testcase classname="Editable Table should initially render with the default theme" name="Editable Table should initially render with the default theme" time="0.038">
+    </testcase>
+    <testcase classname="Editable Table should allow toggling the theme" name="Editable Table should allow toggling the theme" time="0.027">
+    </testcase>
+    <testcase classname="Editable Table should initially render a 5-row table, and save and add buttons are disabled" name="Editable Table should initially render a 5-row table, and save and add buttons are disabled" time="0.019">
+    </testcase>
+    <testcase classname="Editable Table should result in appropriate UI changes when employee salary changes to a new valid value" name="Editable Table should result in appropriate UI changes when employee salary changes to a new valid value" time="0.029">
+    </testcase>
+    <testcase classname="Editable Table save button should be disabled when employee salary changes to an invalid value" name="Editable Table save button should be disabled when employee salary changes to an invalid value" time="0.02">
+    </testcase>
+    <testcase classname="Editable Table should add a new employee to the table with valid values and reset input fields" name="Editable Table should add a new employee to the table with valid values and reset input fields" time="0.024">
+    </testcase>
+    <testcase classname="Editable Table adding a new employee with invalid values is not possible" name="Editable Table adding a new employee with invalid values is not possible" time="0.031">
+    </testcase>
+  </testsuite>
+</testsuites>

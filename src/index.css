@@ -1,0 +1,175 @@
+@import '../node_modules/h8k-design/dist/index.css';
+
+/* ------
+/* root styles */
+
+:root{
+  --brand-color: rgba(0, 152, 162, 1);
+  --brand-color-dark: rgba(0, 112, 122, 1);
+  --brand-color-light: rgb(0, 152, 162, 0.1);
+  --brand-box-shadow: rgba(0, 80, 90, 0.4);
+  --brand-box-shadow-hover: rgba(0, 20, 30, 0.3);
+  --brand-disabled: rgba(0, 220, 230, 0.15);
+
+  --background: #fff;
+  --text-color: #161625;
+  --input-focus-border-color: var(--brand-color-dark);
+  --input-box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
+  --table-row-color: var(--background);
+  --table-row-color-odd: #f9f9f9;
+  --table-row-color-hover: #efefef
+}
+
+/* Dark Theme color overrides */
+.theme.theme--dark {  
+  --background: rgb(26, 32, 39);
+  --text-color: #a4a7ae;
+  --input-focus-border-color: var(--brand-color-light);
+  --input-box-shadow: inset 0 1px 4px rgb(255 255 255 / 10%), 0 0 0 transparent;
+  --table-row-color: var(--background);
+  --table-row-color-odd: #14191e;
+  --table-row-color-hover: rgb(18, 18, 18);
+}
+
+html, body{
+  height: 100%;
+}
+
+.theme{
+  background-color: var(--background);
+  color: var(--text-color);
+  min-height: 100%;
+}
+
+.theme-toggle-button{
+  background: none;
+}
+
+.theme-toggle-button, .theme-toggle-button:hover{
+  box-shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ------
+/* general style overrides */
+
+input {
+  height: 30px;
+  background-color: var(--background);
+  color: var(--text-color);
+  box-shadow: var(--input-box-shadow);
+}
+
+input:focus{
+  border-bottom: 2px solid var(--input-focus-border-color);
+}
+
+input[type="text"]{
+  background-color: var(--background);
+  color: var(--text-color)
+}
+
+button {
+  height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+button.x-small{
+  font-size: 0.72rem;
+}
+
+.card {
+  border-radius: 4px;
+  background-color: var(--background);
+}
+
+table thead tr th{
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+/* ------
+/* nav styles */
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--brand-color-dark);
+  text-align: center;
+}
+
+nav h1{
+  font-size: 1rem;
+  color: #fff;
+}
+
+nav button{
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  margin: 0;
+}
+
+nav button:active{
+  position: absolute;
+}
+
+
+/* ------
+/* card styles */
+
+.card{
+  overflow: auto;
+}
+
+/* ------
+/* container styles */
+
+/* 
+* Ideally these media queries will be defined as consistent style breakpoints used across the entire app.
+* Similar to how it's done in css frameworks like bootstrap (xs, s, m, l, etc..)
+*/
+
+@media (min-width:1060px)  { 
+  .container{
+    width: 75% !important;
+  }
+}
+
+/* ------
+/* table styles */
+table thead tr th{
+  background-color: var(--brand-color-dark);
+  color: #FFF;
+}
+
+table thead tr th.sortable:hover{
+  color: #FFF;
+}
+
+table tbody tr:hover{
+  background-color: #dfdfdf;
+}
+
+table tbody tr:hover, table tbody tr:nth-child(odd):hover{
+  background-color: var(--table-row-color-hover);
+}
+
+table tbody tr{
+  background-color: var(--table-row-color);
+}
+
+table tbody tr:nth-child(odd){
+  background-color: var(--table-row-color-odd);
+}
+
+table tbody tr td:last-child{
+  min-width: 170px;
+}
